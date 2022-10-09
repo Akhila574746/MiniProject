@@ -6,3 +6,8 @@ ip = st.text_input('Enter Job Description:') #creates a text box in web app
 op = model_nb.predict([ip])
 if st.button('Predict'):
   st.title(op[0])
+  
+  
+  
+  
+  
