@@ -1,9 +1,8 @@
 import streamlit as st
-import pickle
 import joblib
 
 model_nb = joblib.load('Fake_job_postings')
-vect = pickle.load(open("vectorizer","rb"))
+vect = joblib.load('vectorizer.pkl')
 
 def main():
   st.title('Fake Job Detection') #creates a title in web app
