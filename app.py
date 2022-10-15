@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 model_nb = joblib.load('Fake_job_postings')
-vect = joblib.load('vectorizer.pkl')
+vect = joblib.load('vect.pkl')
 
 def main():
   st.title('Fake Job Detection') #creates a title in web app
