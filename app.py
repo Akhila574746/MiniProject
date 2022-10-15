@@ -4,7 +4,7 @@ import pickle
 model_nb = pickle.load('Fake_job_postings')
 cv = pickle.load(open("vectorizer","rb"))
 
-def main:
+def main():
   st.title('Fake Job Detection') #creates a title in web app
   ip = st.text_input('Enter Job Description:') #creates a text box in web app
   if st.button('Predict'):
