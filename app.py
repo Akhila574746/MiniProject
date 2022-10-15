@@ -1,7 +1,8 @@
 import streamlit as st
 import pickle
+import joblib
 
-model_nb = pickle.load('Fake_job_postings')
+model_nb = joblib.load('Fake_job_postings')
 cv = pickle.load(open("vectorizer","rb"))
 
 def main():
